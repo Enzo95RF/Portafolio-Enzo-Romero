@@ -45,4 +45,15 @@ $(document).ready(function(){
     });
 });
 
+//Solicitar nombre
+    const html = document.querySelector('html');
+    const titulo = document.querySelector('.titulo');
+    let saludo = "Hola ";
+    let presen = " soy Enzo";
+    let nombre = prompt("Ingresa tu nombre para continuar");
+    if(nombre){
+        titulo.textContent = saludo + nombre + presen
+    }else{
+        titulo.textContent = saludo + presen
+    }
 
